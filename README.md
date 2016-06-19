@@ -10,6 +10,8 @@ You can see see (and drill down by time) the frequency of the API calls for the 
 
 `mvn package`
 
+`CloudTrailViewer/target/cloudtrail-viewer-jar-with-dependencies.jar`
+
 ## Running the application
 You can run the application in one of two ways:
 
