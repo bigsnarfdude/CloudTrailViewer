@@ -37,7 +37,7 @@ Note you will need to have Java 7 (or higher) installed for the application to w
 ### Application configuration database
 The first time you run the application it will attempt to create a preferences database on your computer. This database will be placed into your OS defined UserHome folder for example on linux this would be:
 
-* /home/joe.blogs/.cloudtrailviewer/prefs.db
+`/home/<username>/.cloudtrailviewer/prefs.db`
 
 ## Loading Events
 The first thing you will need to do once the application is running is to load some CloudTrial logs files, you can either load these from your local filesystem or from an S3 bucket.
