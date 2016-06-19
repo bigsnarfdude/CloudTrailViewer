@@ -55,7 +55,11 @@ To load files from an S3 bucket click on the icon that looks like a cloud beside
 Like loading files from the local filesystem loading large amounts of files can cause problems.
 
 #### Adding AWS API Credentials
-To load files from a S3 bucket you need to provide a set of AWS API credentials that have the relevant permissions to read files from the bucket. You do this via the Preferences.
+To load files from a S3 bucket you need to provide a set of AWS API credentials that have the relevant permissions to read files from the bucket.
+
+Once the application is up and running you can add your account, key, and secret key via GUI:
+
+`Preferences`
 
 On the AWS tab of the Preferences Dialog click the + button in the top section (AWS Accounts) and enter your information. You will need to provide the following:
 
