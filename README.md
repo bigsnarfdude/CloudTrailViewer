@@ -49,7 +49,7 @@ To load files from the load filesystem click the left hand icon in the toolbar t
 
 You can select a folder and all files within that folder will be loaded.
 
-When loading files all Events contained within the files will be loaded, depending on how active your AWS Account is you may find that loading more that 100 files can make the application unresponsive.
+When loading files all Events contained within the files will be loaded, depending on how active your AWS Account is you may find that loading more that 100 files can make the application **unresponsive**.
 
 ### S3 Files
 To load files from an S3 bucket click on the icon that looks like a cloud beside the 'local files' icon. This presents a file chooser style dialog that allows you to navigate through an S3 bucket and load log files. The time it takes for the files to download and load will depend on your network connection and speed.
