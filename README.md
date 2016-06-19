@@ -43,7 +43,9 @@ The first time you run the application it will attempt to create a preferences d
 The first thing you will need to do once the application is running is to load some CloudTrial logs files, you can either load these from your local filesystem or from an S3 bucket.
 
 ### Local Files
-To load files from the load filesystem click the left hand icon in the toolbar that looks like a folder. Browse to the required files, select the ones you need and click the load button. **Note the files must be the .gz format generated via CloudTrial**
+To load files from the load filesystem click the left hand icon in the toolbar that looks like a folder. Browse to the required files, select the ones you need and click the load button. 
+
+* **Note the files must be the .gz format generated via CloudTrial**
 
 You can select a folder and all files within that folder will be loaded.
 
