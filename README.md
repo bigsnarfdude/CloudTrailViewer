@@ -6,6 +6,9 @@ Displaying of API Metrics.
 
 You can see see (and drill down by time) the frequency of the API calls for the loaded event. You can either see all the events or filter by AWS service.
 
+## Build application
+
+`mvn package`
 
 ## Running the application
 You can run the application in one of two ways:
