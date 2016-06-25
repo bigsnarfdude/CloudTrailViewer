@@ -37,17 +37,19 @@ Note you will need to have Java 7 (or higher) installed for the application to w
 ### Application configuration database
 The first time you run the application it will attempt to create a preferences database on your computer. This database will be placed into your OS defined UserHome folder for example on linux this would be:
 
-* /home/joe.blogs/.cloudtrailviewer/prefs.db
+`/home/<username>/.cloudtrailviewer/prefs.db`
 
 ## Loading Events
 The first thing you will need to do once the application is running is to load some CloudTrial logs files, you can either load these from your local filesystem or from an S3 bucket.
 
 ### Local Files
-To load files from the load filesystem click the left hand icon in the toolbar that looks like a folder. Browse to the required files, select the ones you need and click the load button. **Note the files must be the .gz format generated via CloudTrial**
+To load files from the load filesystem click the left hand icon in the toolbar that looks like a folder. Browse to the required files, select the ones you need and click the load button. 
+
+* **Note the files must be the .gz format generated via CloudTrial**
 
 You can select a folder and all files within that folder will be loaded.
 
-When loading files all Events contained within the files will be loaded, depending on how active your AWS Account is you may find that loading more that 100 files can make the application unresponsive.
+When loading files all Events contained within the files will be loaded, depending on how active your AWS Account is you may find that loading more that 100 files can make the application **unresponsive**.
 
 ### S3 Files
 To load files from an S3 bucket click on the icon that looks like a cloud beside the 'local files' icon. This presents a file chooser style dialog that allows you to navigate through an S3 bucket and load log files. The time it takes for the files to download and load will depend on your network connection and speed.
@@ -55,7 +57,11 @@ To load files from an S3 bucket click on the icon that looks like a cloud beside
 Like loading files from the local filesystem loading large amounts of files can cause problems.
 
 #### Adding AWS API Credentials
-To load files from a S3 bucket you need to provide a set of AWS API credentials that have the relevant permissions to read files from the bucket. You do this via the Preferences.
+To load files from a S3 bucket you need to provide a set of AWS API credentials that have the relevant permissions to read files from the bucket.
+
+Once the application is up and running you can add your account, key, and secret key via GUI:
+
+`Preferences`
 
 On the AWS tab of the Preferences Dialog click the + button in the top section (AWS Accounts) and enter your information. You will need to provide the following:
 
@@ -126,6 +132,9 @@ This feature provides a breakdown of the API Events loaded. For each AWS Service
 * Number of API calls made by AWS IAM Users and Roles : Greenish section on right
 * Events per second, minute and hour for each section
 * Total number of API calls
+
+#### Database
+https://db.apache.org/derby/
 
 ##### Invoked By
 The invoked by Feature shows a breakdown of the API calls that have been made separated into two groups, IAM Users and IAM Roles.
